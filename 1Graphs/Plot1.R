@@ -1,0 +1,6 @@
+source("../datos/read_data.R")
+par(mfrow=c(1,1))
+setwd("~/MEGA/MEGAsync/DATA-SCIENCE/work/c4-w1-project/1graphs")
+hist(pow_consumption$Global_active_power,col="red", main="Global Active Power",xlab="Global Active Power (kilowats)")
+dev.copy(png,"Plot1.png",width=480,height=480,units='px')
+dev.off()
